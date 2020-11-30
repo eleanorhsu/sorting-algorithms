@@ -1,5 +1,4 @@
-def bubble_sort(input):
-	arr = input.split(',')
+def bubble_sort(arr):
 	flag = True
 	while flag:
 		flag = False
@@ -10,7 +9,9 @@ def bubble_sort(input):
 	return arr
 
 def main(input):
-	print(bubble_sort(input))
+	arr = input.split(',')
+	arr = [int(x) for x in arr]
+	print(bubble_sort(arr))
 
 if __name__ == "__main__":
 	main(input())
